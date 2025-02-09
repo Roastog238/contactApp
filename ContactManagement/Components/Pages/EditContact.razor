@@ -4,13 +4,12 @@
 @using ContactManagementApp.Models;
 @inject NavigationManager Navigation
 @inject ContactService ContactService
+@rendermode InteractiveServer
 
 <h3>Edit Contact</h3>
 
-<EditForm Model="@contact" OnValidSubmit="HandleValidSubmit" FormName="EditContactForm" >
+<EditForm Model="@contact" OnValidSubmit="HandleValidSubmit">
     <DataAnnotationsValidator />
-    <ValidationSummary />
-
     <div>
         <label>First Name:</label>
         <InputText @bind-Value="contact.FirstName" />
@@ -35,25 +34,24 @@
     public int Id { get; set; }
 
     private Contact contact = new Contact();
-    private ContactService service = new ContactService();
+
     protected override void OnParametersSet()
     {
-        contact = service.GetContactById(Id) ?? new Contact();
-    if (contact == null)
+        contact = ContactService.GetContactById(Id) ?? new Contact();
+
+        if (contact.Id == 0) // Check if contact exists
         {
-            // Redirect if contact does not exist
             Navigation.NavigateTo("/contacts");
         }
     }
 
     private void HandleValidSubmit()
     {
-        Contact updatedContact = new Contact();
-        //ContactService.UpdateContact(contact);
-           Navigation.NavigateTo("/contacts");
-
+        ContactService.UpdateContact(contact);
+        Navigation.NavigateTo("/contacts");
     }
 }
+
 <style>
 /* Centered Form Container */
 .form-container {

@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ContactManagement.bundle.scp.css",
+      "Id": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ContactManagement.bundle.scp.css",
       "PackagePath": "staticwebassets\\ContactManagement.bundle.scp.css"
     },
     {
-      "Id": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\app.css",
+      "Id": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {

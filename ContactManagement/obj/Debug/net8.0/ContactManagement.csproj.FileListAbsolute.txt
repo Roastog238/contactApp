@@ -27,3 +27,4 @@ C:\Users\rabina\Desktop\ContactAPP\ContactManagement\obj\Debug\net8.0\refint\Con
 C:\Users\rabina\Desktop\ContactAPP\ContactManagement\obj\Debug\net8.0\ContactManagement.pdb
 C:\Users\rabina\Desktop\ContactAPP\ContactManagement\obj\Debug\net8.0\ContactManagement.genruntimeconfig.cache
 C:\Users\rabina\Desktop\ContactAPP\ContactManagement\obj\Debug\net8.0\ref\ContactManagement.dll
+C:\Users\rabina\Desktop\ContactAPP\ContactManagement\obj\Debug\net8.0\ContactManagement.sourcelink.json

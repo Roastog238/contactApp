@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yODYAyTf77CdJSwpZCAewP2fhn0QHbbSwTlVjtE6pqg=",
+  "Hash": "zcibTR/nqgRZ5kkKJhS++PC1S+zXuMI3eVL3pVsP5xU=",
   "Source": "ContactManagement",
   "BasePath": "_content/ContactManagement",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ContactManagement\\wwwroot",
       "Source": "ContactManagement",
-      "ContentRoot": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\",
       "BasePath": "_content/ContactManagement",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ContactManagement.styles.css",
+      "Identity": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ContactManagement.styles.css",
       "SourceId": "ContactManagement",
       "SourceType": "Computed",
-      "ContentRoot": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ContactManagement",
       "RelativePath": "ContactManagement.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ContactManagement.styles.css"
+      "OriginalItemSpec": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ContactManagement.styles.css"
     },
     {
-      "Identity": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ContactManagement.bundle.scp.css",
+      "Identity": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ContactManagement.bundle.scp.css",
       "SourceId": "ContactManagement",
       "SourceType": "Computed",
-      "ContentRoot": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ContactManagement",
       "RelativePath": "ContactManagement.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ContactManagement.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ContactManagement.bundle.scp.css"
     },
     {
-      "Identity": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\app.css",
       "SourceId": "ContactManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\",
       "BasePath": "_content/ContactManagement",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "ContactManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\",
       "BasePath": "_content/ContactManagement",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "ContactManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\",
       "BasePath": "_content/ContactManagement",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\favicon.png",
       "SourceId": "ContactManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\",
       "BasePath": "_content/ContactManagement",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

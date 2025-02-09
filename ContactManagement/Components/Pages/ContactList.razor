@@ -1,9 +1,9 @@
-
 @page "/contacts"
 @inject NavigationManager Navigation
 @using ContactManagementApp.Services;
 @using ContactManagementApp.Models;
 @inject ContactService ContactService
+@rendermode InteractiveServer
 
 <h3>Contact List</h3>
 
@@ -19,7 +19,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var contact in ContactService.GetContacts())
+        @foreach (var contact in contacts) 
         {
             <tr>
                 <td>@contact.Id</td>
@@ -29,7 +29,7 @@
                 <td>@contact.PhoneNumber</td>
                 <td>
                     <a href="/edit-contact/@contact.Id">Edit</a> |
-                    <button @onclick="()=> DeleteContact(contact.Id)">Delete</button>
+                    <button @onclick="() => DeleteContact(contact.Id)">Delete</button>
                 </td>
             </tr>
         }
@@ -49,16 +49,16 @@
     private void LoadContacts()
     {
         contacts = ContactService.GetContacts(); // ✅ Refresh list
-        StateHasChanged(); // force ui update
     }
+
     private void DeleteContact(int id)
     {
         Console.WriteLine($"Deleting contact with ID: {id}");
         ContactService.DeleteContact(id);
-        StateHasChanged();
-        LoadContacts();
+        LoadContacts(); // ✅ Refresh list after deletion
     }
 }
+
 <style>
     /* General Page Styling */
 body {

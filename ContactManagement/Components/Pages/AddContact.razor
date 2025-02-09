@@ -1,5 +1,6 @@
-// Pages/AddContact.razor
 @page "/add-contact"
+@rendermode InteractiveServer
+
 @inject NavigationManager Navigation
 @inject ContactService ContactService
 @using ContactManagementApp.Services;
@@ -7,51 +8,59 @@
 
 <h3>Add New Contact</h3>
 
-<EditForm Model="@newContact" OnValidSubmit="HandleValidSubmit" FormName="AddContactForm">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+
 
     <div>
         <label>First Name:</label>
-        <InputText @bind-Value="newContact.FirstName" @onchange="DebugValue" />
+        <input @bind="firstName" />
     </div>
     <div>
         <label>Last Name:</label>
-        <InputText @bind-Value="newContact.LastName" />
+        <input @bind="lastName" />
     </div>
     <div>
         <label>Email:</label>
-        <InputText @bind-Value="newContact.Email" />
+        <input @bind="Email" />
     </div>
     <div>
         <label>Phone Number:</label>
-        <InputText @bind-Value="newContact.PhoneNumber" />
+        <input @bind="phoneNumber" />
     </div>
-    <button type="submit">Add Contact</button>
-</EditForm>
+    <button  @onclick=HandleValidSubmit>Add Contact</button>
 
 @code {
-
-    private void DebugValue(ChangeEventArgs e)
-    {
-        Console.WriteLine($"Changed Value: {e.Value}");
-    }
-    private Contact newContact {get;set;} = new Contact();
+    private string firstName = "";
+    private string lastName = "";
+    private string Email = "";
+    private string? phoneNumber ;
+        private Contact newContact {get;set;} = new Contact();
 
     private void HandleValidSubmit()
     {
-        // Call the method on the injected instance of ContactService.
-        @* ContactService.AddContact(newContact);
-        Navigation.NavigateTo("/contacts"); *@
+        var newContact = new Contact()
+        {
+            FirstName = firstName,
+            LastName = lastName,
+            Email = Email,
+            PhoneNumber = phoneNumber
+        };
+
         Console.WriteLine($"Submitting: {newContact.FirstName}, {newContact.LastName}, {newContact.Email}, {newContact.PhoneNumber}");
-    ContactService.AddContact(newContact);
-    newContact = new Contact(); // Reset form
-    Navigation.NavigateTo("/contacts");
+
+        ContactService.AddContact(newContact);
+
+        // Reset form fields
+        firstName = "";
+        lastName = "";
+        Email = "";
+        phoneNumber = "";
+
+        Navigation.NavigateTo("/contacts");
     }
 }
 <style>
 /* Centered Form Container */
-.form-container {
+.form-container { 
     width: 50%;
     margin: 40px auto;
     padding: 20px;

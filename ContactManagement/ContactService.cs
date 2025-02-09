@@ -10,7 +10,7 @@ namespace ContactManagementApp.Services
         private int nextId = 1;
         public ContactService()
         {
-            contacts.Add(new Contact { Id = 1, FirstName = "John", LastName = "Doe", Email = "john@example.com", PhoneNumber = "1234567890" });
+            contacts.Add(new Contact { Id = 0, FirstName = "John", LastName = "Doe", Email = "john@example.com", PhoneNumber = "1234567890" });
         }
         public List<Contact> GetContacts() => contacts;
 
