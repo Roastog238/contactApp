@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ContactManagement.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ContactManagement.bundle.scp.css"
+    },
+    {
+      "Id": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "c:\\Users\\rabina\\Desktop\\ContactAPP\\ContactManagement\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ContactManagement.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ContactManagement.props",
+      "PackagePath": "build\\ContactManagement.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ContactManagement.props",
+      "PackagePath": "buildMultiTargeting\\ContactManagement.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ContactManagement.props",
+      "PackagePath": "buildTransitive\\ContactManagement.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

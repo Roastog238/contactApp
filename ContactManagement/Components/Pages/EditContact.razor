@@ -1,0 +1,117 @@
+// Pages/EditContact.razor
+@page "/edit-contact/{id:int}"
+@using ContactManagementApp.Services;
+@using ContactManagementApp.Models;
+@inject NavigationManager Navigation
+@inject ContactService ContactService
+
+<h3>Edit Contact</h3>
+
+<EditForm Model="@contact" OnValidSubmit="HandleValidSubmit" FormName="EditContactForm" >
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>First Name:</label>
+        <InputText @bind-Value="contact.FirstName" />
+    </div>
+    <div>
+        <label>Last Name:</label>
+        <InputText @bind-Value="contact.LastName" />
+    </div>
+    <div>
+        <label>Email:</label>
+        <InputText @bind-Value="contact.Email" />
+    </div>
+    <div>
+        <label>Phone Number:</label>
+        <InputText @bind-Value="contact.PhoneNumber" />
+    </div>
+    <button type="submit">Save Changes</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Contact contact = new Contact();
+    private ContactService service = new ContactService();
+    protected override void OnParametersSet()
+    {
+        contact = service.GetContactById(Id) ?? new Contact();
+    if (contact == null)
+        {
+            // Redirect if contact does not exist
+            Navigation.NavigateTo("/contacts");
+        }
+    }
+
+    private void HandleValidSubmit()
+    {
+        Contact updatedContact = new Contact();
+        //ContactService.UpdateContact(contact);
+           Navigation.NavigateTo("/contacts");
+
+    }
+}
+<style>
+/* Centered Form Container */
+.form-container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form Heading */
+h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>

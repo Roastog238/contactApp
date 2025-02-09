@@ -1,0 +1,136 @@
+
+@page "/contacts"
+@inject NavigationManager Navigation
+@using ContactManagementApp.Services;
+@using ContactManagementApp.Models;
+@inject ContactService ContactService
+
+<h3>Contact List</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contact in ContactService.GetContacts())
+        {
+            <tr>
+                <td>@contact.Id</td>
+                <td>@contact.FirstName</td>
+                <td>@contact.LastName</td>
+                <td>@contact.Email</td>
+                <td>@contact.PhoneNumber</td>
+                <td>
+                    <a href="/edit-contact/@contact.Id">Edit</a> |
+                    <button @onclick="()=> DeleteContact(contact.Id)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/add-contact">Add New Contact</a>
+
+@code {
+    private List<Contact> contacts = new();
+
+    protected override void OnInitialized()
+    {
+        LoadContacts();
+    }
+
+    private void LoadContacts()
+    {
+        contacts = ContactService.GetContacts(); // ✅ Refresh list
+        StateHasChanged(); // force ui update
+    }
+    private void DeleteContact(int id)
+    {
+        Console.WriteLine($"Deleting contact with ID: {id}");
+        ContactService.DeleteContact(id);
+        StateHasChanged();
+        LoadContacts();
+    }
+}
+<style>
+    /* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+/* Heading */
+h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Table Styling */
+.table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buttons */
+button {
+    background-color: #dc3545; /* Red color for delete */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+/* Add Contact Link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #218838;
+}
+
+
+
+</style>
